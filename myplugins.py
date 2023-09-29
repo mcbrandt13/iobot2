@@ -45,6 +45,10 @@ def shut_it_down(message):
 def haha_yes(message):
     message.send(f'{STATIC_IMG_URL}/sickos.jpg')
 
+@respond_to("^do it")
+def doit(message):
+    message.send("https://media.tenor.com/7EttrztgjiAAAAAC/palpatine-star-wars.gif")
+
 @respond_to("image me (?P<search_query>.*)$")
 def image_me(message, search_query):
     """image me ___ : Search google images for ___, and post a random one."""
